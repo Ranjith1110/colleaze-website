@@ -11264,3 +11264,7 @@ h6,
 .accordion-header.active .icon {
   transform: rotate(45deg);
 }
+
+.fa-star {
+  color: gold !important;
+}

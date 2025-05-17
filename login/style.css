@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lemon', serif;
+     font-family: "Outfit", sans-serif;
 }
 
 body {
@@ -47,7 +47,7 @@ body {
 }
 
 .container button {
-    background-color: #512da8;
+    background-color: #1d2e59;
     color: #fff;
     font-size: 12px;
     font-weight: 600;
@@ -165,9 +165,9 @@ body {
 }
 
 .toggle {
-    background-color: #512da8;
+    background-color: #1d2e59;
     height: 100%;
-    background: linear-gradient(to right, #5c6bc0, #512da8);
+    background: linear-gradient(to right, #4970d2, #1d2e59);
     color: #fff;
     position: relative;
     left: -100%;
@@ -211,6 +211,10 @@ body {
 
 .container.active .toggle-right {
     transform: translateX(200%);
+}
+
+.toggle-right img {
+    margin-bottom: 20px;
 }
 
 @media (max-width:477px) {

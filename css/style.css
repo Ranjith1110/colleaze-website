@@ -11268,3 +11268,83 @@ h6,
 .fa-star {
   color: gold !important;
 }
+
+.marquee-wrapper {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-col {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  flex-direction: column;
+  animation: scroll-down 15s linear infinite;
+}
+
+.marquee-track.reverse {
+  animation: scroll-up 15s linear infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.card-box {
+  margin-bottom: 20px;
+}
+
+/* Horizontal scrolling on small screens */
+.marquee-horizontal {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee-track-horizontal {
+  display: inline-block;
+  animation: scroll-horizontal 15s linear infinite;
+  animation-delay: 0s;
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .marquee-wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .marquee-horizontal {
+    display: none;
+  }
+}

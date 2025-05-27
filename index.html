@@ -211,7 +211,7 @@
         <div class="container">
             <div class="row bg-light py-5 px-2">
                 <!-- Vertical Marquee -->
-                <div class="col-lg-7 marquee-wrapper">
+                <div class="col-lg-7 marquee-wrapper d-none d-lg-block">
                     <div class="row">
                         <!-- Column 1 (Top to Bottom) -->
                         <div class="col-lg-4 marquee-col">
@@ -319,32 +319,77 @@
                     </div>
                 </div>
 
-                <!-- Horizontal Marquee for sm screens -->
-                <div class="col-lg-7 marquee-horizontal">
-                    <div class="marquee-track-horizontal">
-                        <!-- Repeat demo cards -->
-                        <div class="d-inline-block mx-2">
-                            <div class="text-center bg-white shadow p-4" style="width: 200px;">
-                                <i class="fas fa-laptop-code bg-primary p-3 rounded-pill mb-3 text-white"></i>
-                                <h4>Demo Card</h4>
+                <!-- Two-Row Horizontal Marquee for sm and md screens only -->
+                <div class="col-12 d-block d-lg-none">
+                    <!-- Row 1 - Left to Right -->
+                    <div class="marquee-row-wrapper">
+                        <div class="marquee-track-horizontal">
+                            <!-- Duplicate your cards here -->
+                            <div class="d-inline-block mx-2">
+                                <div class="text-center bg-white shadow p-4" style="width: 200px;">
+                                    <i class="fas fa-laptop-code bg-primary p-3 rounded-pill mb-3 text-white"></i>
+                                    <h4>Card 1</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div class="d-inline-block mx-2">
-                            <div class="text-center bg-white shadow p-4" style="width: 200px;">
-                                <i class="fas fa-laptop-code bg-primary p-3 rounded-pill mb-3 text-white"></i>
-                                <h4>Demo Card</h4>
+                            <div class="d-inline-block mx-2">
+                                <div class="text-center bg-white shadow p-4" style="width: 200px;">
+                                    <i class="fas fa-laptop-code bg-primary p-3 rounded-pill mb-3 text-white"></i>
+                                    <h4>Card 1</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div class="d-inline-block mx-2">
-                            <div class="text-center bg-white shadow p-4" style="width: 200px;">
-                                <i class="fas fa-laptop-code bg-primary p-3 rounded-pill mb-3 text-white"></i>
-                                <h4>Demo Card</h4>
+                            <div class="d-inline-block mx-2">
+                                <div class="text-center bg-white shadow p-4" style="width: 200px;">
+                                    <i class="fas fa-laptop-code bg-primary p-3 rounded-pill mb-3 text-white"></i>
+                                    <h4>Card 1</h4>
+                                </div>
                             </div>
+                            <div class="d-inline-block mx-2">
+                                <div class="text-center bg-white shadow p-4" style="width: 200px;">
+                                    <i class="fas fa-laptop-code bg-primary p-3 rounded-pill mb-3 text-white"></i>
+                                    <h4>Card 1</h4>
+                                </div>
+                            </div>
+                            <!-- Copy similar cards -->
                         </div>
-                        <!-- Repeat above div 9 times -->
+                    </div>
+
+                    <!-- Row 2 - Right to Left -->
+                    <div class="marquee-row-wrapper">
+                        <div class="marquee-track-horizontal reverse">
+                            <!-- Duplicate your cards here -->
+                            <div class="d-inline-block mx-2">
+                                <div class="text-center bg-white shadow p-4" style="width: 200px;">
+                                    <i class="fas fa-laptop-code bg-primary p-3 rounded-pill mb-3 text-white"></i>
+                                    <h4>Card 2</h4>
+                                </div>
+                            </div>
+                            <div class="d-inline-block mx-2">
+                                <div class="text-center bg-white shadow p-4" style="width: 200px;">
+                                    <i class="fas fa-laptop-code bg-primary p-3 rounded-pill mb-3 text-white"></i>
+                                    <h4>Card 2</h4>
+                                </div>
+                            </div>
+                            <div class="d-inline-block mx-2">
+                                <div class="text-center bg-white shadow p-4" style="width: 200px;">
+                                    <i class="fas fa-laptop-code bg-primary p-3 rounded-pill mb-3 text-white"></i>
+                                    <h4>Card 2</h4>
+                                </div>
+                            </div>
+                            <div class="d-inline-block mx-2">
+                                <div class="text-center bg-white shadow p-4" style="width: 200px;">
+                                    <i class="fas fa-laptop-code bg-primary p-3 rounded-pill mb-3 text-white"></i>
+                                    <h4>Card 2</h4>
+                                </div>
+                            </div>
+                            <!-- Copy similar cards -->
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-7"></div>
+
+
+                <div class="col-lg-5">
+                    <h1>Hai</h1>
+                </div>
             </div>
         </div>
     </div>

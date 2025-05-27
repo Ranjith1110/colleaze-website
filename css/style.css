@@ -11316,20 +11316,25 @@ h6,
 }
 
 /* Horizontal scrolling on small screens */
-.marquee-horizontal {
-  white-space: nowrap;
+.marquee-row-wrapper {
   overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 20px;
 }
 
 .marquee-track-horizontal {
   display: inline-block;
-  animation: scroll-horizontal 15s linear infinite;
-  animation-delay: 0s;
+  white-space: nowrap;
+  animation: scroll-left 8s linear infinite;
 }
 
-@keyframes scroll-horizontal {
+.marquee-track-horizontal.reverse {
+  animation: scroll-right 8s linear infinite;
+}
+
+@keyframes scroll-left {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
 
   100% {
@@ -11337,14 +11342,19 @@ h6,
   }
 }
 
-@media (max-width: 991.98px) {
-  .marquee-wrapper {
-    display: none;
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
 
+/* Hide marquee on large and up */
 @media (min-width: 992px) {
-  .marquee-horizontal {
-    display: none;
+  .marquee-row-wrapper {
+    display: none !important;
   }
 }
